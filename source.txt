@@ -1,0 +1,7 @@
+https://www.freecodecamp.org/news/learn-crud-operations-in-javascript-by-building-todo-app/
+
+Activation extension sass 
+    1) créer fichier nom.sass
+    2) dans ce fichier VIDE cliquer sur watch
+    3) Ce qui génère 2 autres fichiers .css et map.css
+    4) coder dans .sass
