@@ -20,13 +20,14 @@
                 <!-- fin -->
                 <br><br>
                 
-                <!-- saisie post du user -->
+                <!-- saisie post du user captage de sa valeur avec input.value-->
                     <textarea id="input" cols="30" rows="10"></textarea>
                 <!-- fin -->
                 <br><br>
                 
                 <!-- user message concernant validation formumaire -->
-                    <div id="msg"></div>
+                    <div id="msgFail"></div>
+                    <!-- <div id="msgSuccess"></div> -->
                 <!-- fin -->
                 <br>
                 
@@ -38,25 +39,32 @@
         
         <div class="right">
             <h3>Vos posts ici</h3>
-            <!-- Injection des posts ajoutés ici dans le DOM id= posts -->
-            <div id="posts">
-                <div>
-                    <p>POST 1</p>
-                    <span class="options">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                        <i class="fa-solid fa-trash-can"></i>
-                    </span>
+            
+            <!-- Injection dynamique des posts ajoutés ici dans le DOM id= posts -->
+                <div id="posts">
+                    
+                    <!-- exemple1 ecrit en dur -->
+                    <div>
+                        <p>POST 1</p>
+                        <span class="options">
+                            <i onClick="updatePost(this)" class="fa-solid fa-pen-to-square"></i>
+                            <i onClick="deletePost(this)" class="fa-solid fa-trash-can"></i>
+                        </span>
+                    </div>
+                    <!-- fin -->
+                    
+                    <!-- exemple1 ecrit en dur -->
+                        <div>
+                            <p>POST 2</p>
+                            <span class="options">
+                                <i onClick="updatePost(this)" class="fa-solid fa-pen-to-square"></i>
+                                <i onClick="deletePost(this)" class="fa-solid fa-trash-can"></i>
+                            </span>  
+                        </div>
+                    <!-- fin -->
                 </div>
-                
-                <div>
-                    <p>POST 2</p>
-                    <span class="options">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                        <br><br>
-                        <i class="fa-solid fa-trash-can"></i>
-                    </span>  
-                </div>
-            </div>
+            <!-- fin -->
+
         </div>
     </div>
 </body>

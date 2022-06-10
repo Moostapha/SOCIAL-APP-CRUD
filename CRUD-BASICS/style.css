@@ -9,6 +9,7 @@ body {
   }
   body h1 {
     text-align: center;
+    font-size: medium;
   }
 }
 
@@ -40,8 +41,12 @@ body {
   }
 }
 
-#msg {
+#msgFail {
   color: red;
+}
+
+#msgSuccess {
+  color: green;
 }
 
 #posts div {
